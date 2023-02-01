@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body class="light">
+
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+        </div>
+    
+    </div>
+    
+    <div class="header light">
+        <div class="left">
+            <button class="menu-button light" onclick="openNav()">≡</button>
+            <p class="title light">Landing Page</p>
+        </div>
+            <div class="right">
+            <ul>
+                <li id="dark-mode">Dark Mode</li>
+                <script>darkMode(document.getElementById("dark-mode"))</script>
+                <li>Sign In</li>
+            </ul>
+        </div>
+    </div>
+    <div class="body light">
+        <div class="left-body light">
+            <ul class="row light" id="info-buttons">
+                <li class="selected"><button>AquaMarine</button></li>
+                <li><button>DracoBot</button></li>
+                <li><button>PLACEHOLDER</button></li>
+            </ul>
+            <img src="images/AquaMarine.png" alt="Picture of Aqua">
+            <p id="description">
+                Nullam consectetur dignissim arcu, quis laoreet enim rhoncus ut. Mauris neque sapien, porta
+                sed convallis id, iaculis vitae justo. Praesent venenatis molestie massa, eu rutrum nunc 
+                cursus vel. Phasellus suscipit nisl quam, ut congue turpis malesuada a. Sed condimentum, 
+                lacus in bibendum fringilla, odio mi congue ipsum, nec congue augue diam nec libero. In vitae 
+                nisi luctus, bibendum dolor a, lacinia nisl. Nam ac diam a ipsum euismod semper.
+            </p>
+            <script>botInfoChanger(document.getElementById("info-buttons"))</script>
+        </div>
+        <div class="right-body light">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis tincidunt ante, 
+                ut cursus mauris eleifend non. Morbi venenatis, neque non vehicula cursus, elit risus 
+                efficitur enim, vel facilisis tortor nunc eget lacus. Cras sem ipsum, pulvinar ac aliquet 
+                eu, rutrum quis tortor. Nullam blandit, diam a accumsan dictum, turpis tortor tincidunt 
+                ligula, et tincidunt neque justo dignissim metus. Fusce non odio nec magna elementum tempus. 
+                Duis vestibulum aliquam sollicitudin. Suspendisse potenti. Morbi placerat mollis urna varius 
+                ornare. Aenean facilisis fermentum quam sed pharetra. Suspendisse vel sodales orci. Donec 
+                porta ut ex semper eleifend.
+            </p>
+        </div>
+    </div>
+    <div class="footer light">
+        <p>Landing Page - John Paris</p>
+    </div>
+</body>
+</html>

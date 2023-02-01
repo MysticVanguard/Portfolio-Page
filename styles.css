@@ -1,0 +1,190 @@
+.header, .footer, .header ul, .header li, body, .body, .row, .row li, .row button, .right-body, .left {
+    display: flex
+}
+
+.header, .footer, .header ul, body, .row li, .footer p {
+    margin: 0;
+}
+
+
+/* Light Mode Color Scheme CSS */
+.header li, .left-body p, .row button, .right-body, .menu-button {
+    border-color: #243E36;
+}
+.header li, .left-body p, .row button, .right-body, .menu-button {
+    background-color: #7CA982;
+}
+.header li:hover, body, .body, .menu-button:hover, ul.row li.selected button, .row button:hover{
+    background-color: #F1F7ED;
+}
+.header li:hover, .menu-button:hover {
+    border-color: #22031F;
+}
+.title, .footer p {
+    color: #7CA982;
+}
+.header li, a {
+    color: #22031F;
+}
+.header, .footer {
+    background-color: #243E36;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+
+.header ul {
+    height: 100%;
+}
+
+.header li{
+    font-size: larger;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.left-body p{
+    margin: 16px;
+    border-style: solid;
+    padding: 0;
+}
+
+
+.left-body p, .right-body p {
+    margin: 12px;
+    margin-top: 0;
+}
+
+.row {
+    margin: 12px;
+}
+
+
+.row, .row li {
+    padding: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+.row button {
+    flex: 1;
+    justify-content: center;
+    border-style: solid;
+}
+.right-body {
+    margin: 16px;
+    border-style: solid;
+}
+.menu-button {
+    border-style: solid;
+    color: #243E36;
+    padding: 12px;
+    size: 24px, auto;
+    
+}
+
+.title {
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 4px;
+    padding: 0px;
+}
+
+.left {
+    gap: 16px;
+    align-items: center;
+}
+
+.footer {
+    margin-top: auto;
+    justify-content: center;
+}
+
+.left-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Dark Mode Color Scheme CSS */
+.header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button {
+    background-color: #FF9B54;
+}
+.header.dark li, .header.dark a, .menu-button.dark {
+    color: #212D40;
+}
+.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p {
+    border-color: #212D40;
+}
+.header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover {
+    border-color: #364156;
+}
+.header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover, ul.row.dark li.selected button{
+    background-color: #FF7F51;
+}
+body.dark, .body.dark {
+    background-color: #364156;
+}
+.title.dark, .footer.dark p {
+    color: #FF7F51;
+}
+.header.dark , .footer.dark {
+    background-color: #212D40;
+}
+
+
+#myNav {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: #243E36E3; 
+    overflow-x: hidden; 
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #7CA982;
+    display: block;  
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #F1F7ED;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 36px;
+  }
