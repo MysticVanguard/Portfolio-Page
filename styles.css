@@ -24,11 +24,14 @@
 .header li:hover, .menu-button:hover {
     border-color: #22031F;
 }
-.title, .footer p {
+.title, .footer p, .overlay a {
     color: #7CA982;
 }
 .header li, a {
     color: #22031F;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #F1F7ED;
 }
 .header, .footer {
     background-color: #243E36;
@@ -128,6 +131,42 @@ body {
     height: auto;
 }
 
+#myNav {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: #243E36E3; 
+    overflow-x: hidden; 
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;  
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 36px;
+}
 
 
 /* Dark Mode Color Scheme CSS */
@@ -149,52 +188,19 @@ body {
 body.dark, .body.dark {
     background-color: #364156;
 }
-.title.dark, .footer.dark p {
+.title.dark, .footer.dark p{
     color: #FF7F51;
 }
 .header.dark , .footer.dark {
     background-color: #212D40;
 }
-
-
-#myNav {
-    display: none;
+.overlay.dark a:hover, .overlay.dark a:focus {
+    color: #FF7F51;
+}
+.overlay.dark {
+    background-color: #212D40E3; 
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    background-color: #243E36E3; 
-    overflow-x: hidden; 
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #7CA982;
-    display: block;  
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #F1F7ED;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 36px;
-  }
+.overlay.dark a {
+    color: #FF9B54;
+}
