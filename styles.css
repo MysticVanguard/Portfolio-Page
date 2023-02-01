@@ -1,4 +1,8 @@
-.header, .footer, .header ul, .header li, body, .body, .row, .row li, .row button, .right-body, .left {
+* {
+    font-size: large;
+}
+
+.header, .footer, .header ul, .header li, body, .body, .row, .row li, .row button, .left {
     display: flex
 }
 
@@ -56,16 +60,20 @@ body {
     min-height: 100vh;
 }
 
+.left-body {
+    width: 100%;
+}
+
 .left-body p{
     margin: 16px;
     border-style: solid;
-    padding: 0;
 }
 
 
 .left-body p, .right-body p {
     margin: 12px;
     margin-top: 0;
+    padding: 5px;
 }
 
 .row {
@@ -83,10 +91,12 @@ body {
     flex: 1;
     justify-content: center;
     border-style: solid;
+    padding: 5px;
 }
 .right-body {
-    margin: 16px;
+    margin: 12px;
     border-style: solid;
+    height: max-content;
 }
 .menu-button {
     border-style: solid;

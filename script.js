@@ -23,7 +23,13 @@ function darkMode(inp){
 
 function botInfoChanger(inp) {
     let text = [
-        "Example1",
+        "AquaMarine is a virtual fishing and aquarium Discord bot I created " +
+        "in May 2021 to help me learn Python. Since its public debut in August " +
+        "2021, it has gained increasing popularity with over 350 servers, 900 users, " +
+        "and 100k commands ran. The bot has over 150 unique pixel fish to catch at 7 " + 
+        "locations and over 50 achievements and upgrades each. An enjoyable bot for " + 
+        "anyone interested in fishing or owning cute fish, you can catch fish, put them " +
+        "in aquariums, feed and take care of them, clean the ocean up, gamble, and much more.",
         "Example2",
         "Example3"
     ]
