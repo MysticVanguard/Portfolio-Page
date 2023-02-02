@@ -6,16 +6,16 @@
     display: flex
 }
 
-.header, .footer, .header ul, body, .row li, .footer p {
+.header, .project, .footer, .header ul, body, .row li, .footer p {
     margin: 0;
 }
 
 
 /* Light Mode Color Scheme CSS */
-.header li, .left-body p, .row button, .right-body, .menu-button {
+.header li, .left-body p, .row button, .right-body, .menu-button, .project {
     border-color: #243E36;
 }
-.header li, .left-body p, .row button, .right-body, .menu-button {
+.header li, .left-body p, .row button, .right-body, .menu-button, .project {
     background-color: #7CA982;
 }
 .header li:hover, body, .body, .menu-button:hover, ul.row li.selected button, .row button:hover{
@@ -90,17 +90,25 @@ body {
     flex-grow: 1;
 }
 
+.shown {
+    text-decoration: underline;
+}
 .row button {
     flex: 1;
     justify-content: center;
     border-style: solid;
     padding: 5px;
 }
-.right-body {
+.right-body, .project {
     margin: 12px;
     border-style: solid;
     height: max-content;
 }
+
+.project {
+    padding: 8px;
+}
+
 .menu-button {
     border-style: solid;
     color: #243E36;
@@ -109,6 +117,11 @@ body {
     
 }
 
+h2 {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
 .title {
     font-weight: bolder;
     font-size: x-large;
@@ -163,20 +176,20 @@ body {
   
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 36px;
+    top: 4px;
+    left: 4px;
+    font-size: 24px;
 }
 
 
 /* Dark Mode Color Scheme CSS */
-.header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button {
+.header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button, .project.dark{
     background-color: #FF9B54;
 }
 .header.dark li, .header.dark a, .menu-button.dark {
     color: #212D40;
 }
-.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p {
+.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p, .project.dark {
     border-color: #212D40;
 }
 .header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover {

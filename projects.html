@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="script.js"></script>
+    <title>Projects</title>
+</head>
+<body class="light">
+    <div id="myNav" class="overlay light">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Contact</a>
+        </div>
+    
+    </div>
+    <div class="header light">
+        <div class="left">
+            <button class="menu-button light" onclick="openNav()">≡</button>
+            <p class="title light">Landing Page</p>
+        </div>
+            <div class="right">
+            <ul>
+                <li id="dark-mode">Dark Mode</li>
+                <script>darkMode(document.getElementById("dark-mode"))</script>
+            </ul>
+        </div>
+    </div>
+    <div class="body light" style="flex-direction:column;">
+        <div class="project light">
+            <h2>AquaMarine</h2>
+            <p>xyz</p>
+        </div>
+        <div class="project light">
+            <h2>DracoBot</h2>
+            <p></p>
+        </div>
+        <div class="project light">
+            <h2>Placeholder</h2>
+            <p></p>
+        </div>
+        <div class="project light">
+            <h2><a class="shown" href="http://www.ramhack.com/">Garbage Gurus</a></h2>
+            <p>Garbage Gurus is a website I created with a group of friends for Pine Richland High School's 
+               2023 Hack The Ram competition (found <a class="shown" href="https://hacktheram.com/">here</a>), where we had roughly 
+               8 hours to create an application that addressed the competitions topic "code.change". Our idea 
+               was the creation of a website that lets you take a picture of a piece of trash and have a 
+               machine learning model decide if it was recyclable and what type of recyclable it was, and then 
+               based on the type of recyclable it was the website would direct the user to information on 
+               recyling that type of object. I was responsible for creating most of the website and did most 
+               of the front end development of the project. We had gotten the website working nice and well and 
+               our machine learning model trained and working, but unfortunately with the time restraint we 
+               were unable to get the api to link the two to make the picture upload have functionality.</p>
+        </div>
+        <div class="project light">
+            <h2>Typing Test</h2>
+            <p></p>
+        </div>
+    </div>
+    <div class="footer light">
+        <p>Landing Page - John Paris</p>
+    </div>
+</body>
+</html>
