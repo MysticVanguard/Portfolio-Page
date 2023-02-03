@@ -1,23 +1,37 @@
+if (!sessionStorage.getItem("mode")){
+sessionStorage.setItem("mode", "light")}
+
+function makeDark(all_light, inp) {
+    Array.from(all_light).forEach(element => {
+        element.classList.remove("light")
+        element.classList.add("dark")
+    });
+    inp.textContent = "Light Mode";
+    sessionStorage.setItem("mode", "dark")
+}
+
+function makeLight(inp) {
+    const all_dark = document.getElementsByClassName("dark")
+    Array.from(all_dark).forEach(element => {
+        element.classList.remove("dark")
+        element.classList.add("light")
+    });
+    inp.textContent = "Dark Mode";
+    sessionStorage.setItem("mode", "light")
+}
+
+function getMode(inp) {
+    const all_light = document.getElementsByClassName("light")
+    if (sessionStorage.getItem("mode") === "light"){makeLight(inp);}
+    else {makeDark(all_light, inp);}
+}
 
 function darkMode(inp){
 
         inp.addEventListener("click", function (e) {
             const all_light = document.getElementsByClassName("light")
-            if (all_light.length > 0){
-                Array.from(all_light).forEach(element => {
-                    element.classList.remove("light")
-                    element.classList.add("dark")
-                });
-                inp.textContent = "Light Mode";
-            }
-            else {
-                const all_dark = document.getElementsByClassName("dark")
-                Array.from(all_dark).forEach(element => {
-                    element.classList.remove("dark")
-                    element.classList.add("light")
-                });
-                inp.textContent = "Dark Mode";
-            }
+            if (all_light.length > 0 ){makeDark(all_light, inp);}
+            else {makeLight(inp);}
         });}
 
 

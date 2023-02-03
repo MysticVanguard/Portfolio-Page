@@ -2,7 +2,7 @@
     font-size: large;
 }
 
-.header, .footer, .header ul, .header li, body, .body, .row, .row li, .row button, .left {
+.header, .footer, .header ul, .header li, body, .body, .row, .row li, .row button, .left, .project, .project-right {
     display: flex
 }
 
@@ -12,7 +12,7 @@
 
 
 /* Light Mode Color Scheme CSS */
-.header li, .left-body p, .row button, .right-body, .menu-button, .project {
+.header li, .left-body p, .row button, .right-body, .menu-button, .project, .project img {
     border-color: #243E36;
 }
 .header li, .left-body p, .row button, .right-body, .menu-button, .project {
@@ -107,8 +107,15 @@ body {
 
 .project {
     padding: 8px;
+    align-items: center;
 }
 
+.project-right {
+    margin: 8px;
+    padding: 16px;
+    flex-direction: column;
+    line-height: 24px;
+}
 .menu-button {
     border-style: solid;
     color: #243E36;
@@ -117,11 +124,12 @@ body {
     
 }
 
-h2 {
+h2, h2 a{
     text-align: center;
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
 }
+
 .title {
     font-weight: bolder;
     font-size: x-large;
@@ -142,6 +150,12 @@ h2 {
 .left-body img {
     max-width: 100%;
     height: auto;
+}
+
+.project img {
+    max-width: 25%;
+    height: 25%;
+    border-style: solid;
 }
 
 #myNav {
