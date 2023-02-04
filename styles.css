@@ -13,28 +13,36 @@
 
 /* Light Mode Color Scheme CSS */
 .header li, .left-body p, .row button, .right-body, .menu-button, .project, .project img {
-    border-color: #243E36;
+    border-color: #006D77;
 }
 .header li, .left-body p, .row button, .right-body, .menu-button, .project {
-    background-color: #7CA982;
+    background-color: #83C5BE;
 }
-.header li:hover, body, .body, .menu-button:hover, ul.row li.selected button, .row button:hover{
-    background-color: #F1F7ED;
+body, .body {
+    background-color: #EDF6F9;
 }
-.header li:hover, .menu-button:hover {
-    border-color: #22031F;
+
+.header li:hover, .menu-button:hover, ul.row li.selected button, .row button:hover {
+    background-color: #FFDDD2;
 }
-.title, .footer p, .overlay a {
-    color: #7CA982;
+
+.header li:hover, .menu-button:hover, .row button:hover, .light ul.row li.selected button {
+    border-color: #E29578;
 }
-.header li, a {
-    color: #22031F;
+.overlay a, .light.row button:hover, .light button.menu-button:hover, .light ul.row li.selected button, .header li:hover {
+    color: #E29578;
 }
-.overlay a:hover, .overlay a:focus {
-    color: #F1F7ED;
+
+.title, .footer p {
+    color: #83C5BE;
 }
+
+.header li, a, .overlay a:hover, .overlay a:focus, .body.light p, .light button, .light button.menu-button {
+    color: #006D77;
+}
+
 .header, .footer {
-    background-color: #243E36;
+    background-color: #006D77;
     gap: 24px;
     justify-content: space-between;
 }
@@ -169,7 +177,7 @@ h2, h2 a{
     z-index: 1; 
     left: 0;
     top: 0;
-    background-color: #243E36E3; 
+    background-color: #EDF6F9E3; 
     overflow-x: hidden; 
 }
   
@@ -198,36 +206,40 @@ h2, h2 a{
 
 /* Dark Mode Color Scheme CSS */
 .header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button, .project.dark{
-    background-color: #FF9B54;
+    background-color: #676F9D;
 }
-.header.dark li, .header.dark a, .menu-button.dark {
-    color: #212D40;
-}
-.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p, .project.dark {
-    border-color: #212D40;
-}
-.header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover {
-    border-color: #364156;
-}
-.header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover, ul.row.dark li.selected button{
-    background-color: #FF7F51;
-}
-body.dark, .body.dark {
-    background-color: #364156;
-}
-.title.dark, .footer.dark p{
-    color: #FF7F51;
-}
-.header.dark , .footer.dark {
-    background-color: #212D40;
-}
-.overlay.dark a:hover, .overlay.dark a:focus {
-    color: #FF7F51;
-}
-.overlay.dark {
-    background-color: #212D40E3; 
+.header.dark li, .header.dark a, .menu-button.dark, .body.dark p, .row.dark button, .dark a {
+    color: #2D3250;
 }
 
+.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p, .project.dark {
+    border-color: #2D3250;
+}
+.header.dark li:hover, .menu-button.dark:hover {
+    border-color: #676F9D;
+}
+
+.header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover, ul.row.dark li.selected button{
+    background-color: #F9B17A;
+}
+body.dark, .body.dark {
+    background-color: #424769;
+}
+.title.dark, .footer.dark p{
+    color: #F9B17A;
+}
+.header.dark , .footer.dark {
+    background-color: #2D3250;
+}
+.overlay.dark a:hover, .overlay.dark a:focus {
+    color: #FFFFFF;
+}
+.overlay.dark {
+    background-color: #424769E3; 
+}
+
+
+
 .overlay.dark a {
-    color: #FF9B54;
+    color: #F9B17A;
 }

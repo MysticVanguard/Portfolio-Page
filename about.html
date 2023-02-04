@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="script.js"></script>
+    <title>About</title>
+</head>
+<body class="light">
+    <div id="myNav" class="overlay light">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    </div>
+    <div class="header light">
+        <div class="left">
+            <button class="menu-button light" onclick="openNav()">≡</button>
+            <p class="title light">About</p>
+        </div>
+        <div class="right">
+            <ul>
+                <li id="dark-mode">Dark Mode</li>
+                <script>darkMode(document.getElementById("dark-mode"))</script>
+            </ul>
+        </div>
+    </div>
+    <div class="footer light">
+        <p>About - John Paris</p>
+    </div>
+</body>
+<script>getMode(document.getElementById("dark-mode"))</script>
+</html>
