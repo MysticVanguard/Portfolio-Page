@@ -59,6 +59,7 @@ body, .body {
     border-style: solid;
     padding: 5px;
     font-size: medium;
+    border-radius: 8px;
 }
 
 a {
@@ -78,8 +79,13 @@ body {
 .left-body p{
     margin: 16px;
     border-style: solid;
+    border-radius: 8px;
+    width: 100%;
 }
 
+.left-info {
+    display: flex;
+}
 
 .left-body p, .right-body p {
     margin: 12px;
@@ -89,6 +95,8 @@ body {
 
 .row {
     margin: 12px;
+    gap: 4px;
+    width: 500px;
 }
 
 
@@ -106,11 +114,19 @@ body {
     justify-content: center;
     border-style: solid;
     padding: 5px;
+    border-radius: 8px;
+    width: 150px;
 }
+
+.row li.selected button {
+    width: 200px;
+}
+
 .right-body, .project {
     margin: 12px;
     border-style: solid;
     height: max-content;
+    border-radius: 8px;
 }
 
 .project {
@@ -129,7 +145,7 @@ body {
     color: #243E36;
     padding: 12px;
     size: 24px, auto;
-    
+    border-radius: 8px;
 }
 
 h2, h2 a{
@@ -156,8 +172,8 @@ h2, h2 a{
 }
 
 .left-body img {
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
+    height: 50%;
 }
 
 .project img {
@@ -203,6 +219,10 @@ h2, h2 a{
     font-size: 24px;
 }
 
+.list-text {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
 /* Dark Mode Color Scheme CSS */
 .header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button, .project.dark{
