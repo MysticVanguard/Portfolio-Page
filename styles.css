@@ -12,10 +12,10 @@
 
 
 /* Light Mode Color Scheme CSS */
-.header li, .left-body p, .row button, .right-body, .menu-button, .project, .project img {
+.header li, .left-body p, .row button, .right-body, .menu-button, .project .bubble, .project img {
     border-color: #006D77;
 }
-.header li, .left-body p, .row button, .right-body, .menu-button, .project {
+.header li, .left-body p, .row button, .right-body, .menu-button, .project .bubble{
     background-color: #83C5BE;
 }
 body, .body {
@@ -37,7 +37,7 @@ body, .body {
     color: #83C5BE;
 }
 
-.header li, a, .overlay a:hover, .overlay a:focus, .body.light p, .light button, .light button.menu-button {
+.header li, a, .overlay a:hover, .overlay a:focus, .body.light p, .light button, .light button.menu-button, h2 {
     color: #006D77;
 }
 
@@ -77,22 +77,24 @@ body {
 }
 
 .left-body p{
-    margin: 16px;
+    margin: 12px;
     border-style: solid;
     border-radius: 8px;
     width: 100%;
+    margin-top: 8px;
+    margin-right: 4px;
+    padding: 8px;
 }
 
 .left-info {
     display: flex;
 }
 
-.left-body p, .right-body p {
-    margin: 12px;
-    margin-top: 0;
-    padding: 5px;
-}
 
+
+.right-body p {
+    margin: 8px;
+}
 .row {
     margin: 12px;
     gap: 4px;
@@ -122,14 +124,14 @@ body {
     width: 200px;
 }
 
-.right-body, .project {
+.right-body, .project .bubble{
     margin: 12px;
     border-style: solid;
     height: max-content;
     border-radius: 8px;
 }
 
-.project {
+.project .bubble, .project{
     padding: 8px;
     align-items: center;
 }
@@ -180,6 +182,7 @@ h2, h2 a{
     max-width: 25%;
     height: 25%;
     border-style: solid;
+    border-radius: 8px;
 }
 
 #myNav {
@@ -225,14 +228,14 @@ h2, h2 a{
 }
 
 /* Dark Mode Color Scheme CSS */
-.header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button, .project.dark{
+.header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button, .project.dark .bubble{
     background-color: #676F9D;
 }
-.header.dark li, .header.dark a, .menu-button.dark, .body.dark p, .row.dark button, .dark a {
+.header.dark li, .header.dark a, .menu-button.dark, .body.dark p, .row.dark button, .dark a, .dark h2 {
     color: #2D3250;
 }
 
-.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p, .project.dark {
+.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p, .project.dark .bubble, .project.dark img {
     border-color: #2D3250;
 }
 .header.dark li:hover, .menu-button.dark:hover {
