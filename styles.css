@@ -2,46 +2,97 @@
     font-size: large;
 }
 
-.header, .footer, .header ul, .header li, body, .body, .row, .row li, .row button, .left, .project, .project-right {
+.header,
+.footer,
+.header ul,
+.header li,
+body,
+.body,
+.row,
+.row li,
+.row button,
+.left,
+.project,
+.project-right {
     display: flex
 }
 
-.header, .project, .footer, .header ul, body, .row li, .footer p {
+.header,
+.project,
+.footer,
+.header ul,
+body,
+.row li,
+.footer p {
     margin: 0;
 }
 
 
 /* Light Mode Color Scheme CSS */
-.header li, .left-body p, .row button, .right-body, .menu-button, .project .bubble, .project img {
+.header li,
+.left-body p,
+.row button,
+.right-body,
+.menu-button,
+.project .bubble,
+.project img {
     border-color: #006D77;
 }
-.header li, .left-body p, .row button, .right-body, .menu-button, .project .bubble{
+
+.header li,
+.left-body p,
+.row button,
+.right-body,
+.menu-button,
+.project .bubble {
     background-color: #83C5BE;
 }
-body, .body {
+
+body,
+.body {
     background-color: #EDF6F9;
 }
 
-.header li:hover, .menu-button:hover, ul.row li.selected button, .row button:hover {
+.header li:hover,
+.menu-button:hover,
+ul.row li.selected button,
+.row button:hover {
     background-color: #FFDDD2;
 }
 
-.header li:hover, .menu-button:hover, .row button:hover, .light ul.row li.selected button {
+.header li:hover,
+.menu-button:hover,
+.row button:hover,
+.light ul.row li.selected button {
     border-color: #E29578;
 }
-.overlay a, .light.row button:hover, .light button.menu-button:hover, .light ul.row li.selected button, .header li:hover {
+
+.overlay a,
+.light.row button:hover,
+.light button.menu-button:hover,
+.light ul.row li.selected button,
+.header li:hover {
     color: #E29578;
 }
 
-.title, .footer p {
+.title,
+.footer p {
     color: #83C5BE;
 }
 
-.header li, a, .overlay a:hover, .overlay a:focus, .body.light p, .light button, .light button.menu-button, h2 {
+.header li,
+a,
+.overlay a:hover,
+.overlay a:focus,
+.body.light p,
+.light button,
+.light button.menu-button,
+h2 {
     color: #006D77;
 }
 
-.header, .footer {
+.header,
+.footer {
     background-color: #006D77;
     gap: 24px;
     justify-content: space-between;
@@ -52,7 +103,7 @@ body, .body {
     height: 100%;
 }
 
-.header li{
+.header li {
     font-size: larger;
     align-items: center;
     border-width: 2px;
@@ -76,7 +127,7 @@ body {
     width: 100%;
 }
 
-.left-body p{
+.left-body p {
     margin: 12px;
     border-style: solid;
     border-radius: 8px;
@@ -95,6 +146,7 @@ body {
 .right-body p {
     margin: 8px;
 }
+
 .row {
     margin: 12px;
     gap: 4px;
@@ -102,7 +154,8 @@ body {
 }
 
 
-.row, .row li {
+.row,
+.row li {
     padding: 0;
     margin-bottom: 0;
     flex-grow: 1;
@@ -111,6 +164,7 @@ body {
 .shown {
     text-decoration: underline;
 }
+
 .row button {
     flex: 1;
     justify-content: center;
@@ -124,16 +178,28 @@ body {
     width: 200px;
 }
 
-.right-body, .project .bubble{
+.right-body,
+.project .bubble {
     margin: 12px;
     border-style: solid;
     height: max-content;
     border-radius: 8px;
 }
 
-.project .bubble, .project{
+.project .bubble {
     padding: 8px;
+}
+
+
+.project {
+    width: 100%;
+    display: flex;
     align-items: center;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-right {
@@ -142,6 +208,7 @@ body {
     flex-direction: column;
     line-height: 24px;
 }
+
 .menu-button {
     border-style: solid;
     color: #243E36;
@@ -150,7 +217,8 @@ body {
     border-radius: 8px;
 }
 
-h2, h2 a{
+h2,
+h2 a {
     text-align: center;
     font-size: larger;
     font-weight: bold;
@@ -192,29 +260,29 @@ h2, h2 a{
 .overlay {
     height: 100%;
     width: 100%;
-    position: fixed; 
-    z-index: 1; 
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    background-color: #EDF6F9E3; 
-    overflow-x: hidden; 
+    background-color: #EDF6F9E3;
+    overflow-x: hidden;
 }
-  
+
 .overlay-content {
     position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
-  
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    display: block;  
+    display: block;
 }
-  
+
 .overlay .closebtn {
     position: absolute;
     top: 4px;
@@ -228,37 +296,69 @@ h2, h2 a{
 }
 
 /* Dark Mode Color Scheme CSS */
-.header.dark li, .left-body.dark p, .right-body.dark, .menu-button.dark, .row.dark button, .project.dark .bubble{
+.header.dark li,
+.left-body.dark p,
+.right-body.dark,
+.menu-button.dark,
+.row.dark button,
+.project.dark .bubble {
     background-color: #676F9D;
 }
-.header.dark li, .header.dark a, .menu-button.dark, .body.dark p, .row.dark button, .dark a, .dark h2 {
+
+.header.dark li,
+.header.dark a,
+.menu-button.dark,
+.body.dark p,
+.row.dark button,
+.dark a,
+.dark h2 {
     color: #2D3250;
 }
 
-.header.dark li, .row.dark button, .right-body.dark, .menu-button.dark, .left-body.dark p, .project.dark .bubble, .project.dark img {
+.header.dark li,
+.row.dark button,
+.right-body.dark,
+.menu-button.dark,
+.left-body.dark p,
+.project.dark .bubble,
+.project.dark img {
     border-color: #2D3250;
 }
-.header.dark li:hover, .menu-button.dark:hover {
+
+.header.dark li:hover,
+.menu-button.dark:hover {
     border-color: #676F9D;
 }
 
-.header.dark li:hover, .menu-button.dark:hover, .row.dark button:hover, ul.row.dark li.selected button{
+.header.dark li:hover,
+.menu-button.dark:hover,
+.row.dark button:hover,
+ul.row.dark li.selected button {
     background-color: #F9B17A;
 }
-body.dark, .body.dark {
+
+body.dark,
+.body.dark {
     background-color: #121212;
 }
-.title.dark, .footer.dark p{
+
+.title.dark,
+.footer.dark p {
     color: #F9B17A;
 }
-.header.dark , .footer.dark {
+
+.header.dark,
+.footer.dark {
     background-color: #2D3250;
 }
-.overlay.dark a:hover, .overlay.dark a:focus {
+
+.overlay.dark a:hover,
+.overlay.dark a:focus {
     color: #FFFFFF;
 }
+
 .overlay.dark {
-    background-color: #424769E3; 
+    background-color: #424769E3;
 }
 
 
