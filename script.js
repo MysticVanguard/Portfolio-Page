@@ -49,13 +49,10 @@ function botInfoChanger(inp) {
         "Dracobot is a bot meant to be a virtual cat that you can take care of, and in return " +
         "he will keep you company. You can pet him to grow his affection towards you, but make " +
         "sure you're feeding him everyday or else he'll start losing affection for you. ",
-        "AquaMarine is a virtual fishing and aquarium Discord bot I created " +
-        "in May 2021 to help me learn Python. Since its public debut in August " +
-        "2021, it has gained increasing popularity with over 350 servers, 900 users, " +
-        "and 100k commands ran. The bot has over 150 unique pixel fish to catch at 7 " +
-        "locations and over 50 achievements and upgrades each. An enjoyable bot for " +
-        "anyone interested in fishing or owning cute fish, you can catch fish, put them " +
-        "in aquariums, feed and take care of them, clean the ocean up, gamble, and much more."
+        "Addiction bot is the newest bot application I've made and I made to help people struggling " +
+        "with addiction. It lets users track their struggles and gives them all kinds of resources to " +
+        "help them get through it. It is still being worked on but offers a safe and secure place " +
+        "for these users to journal and analyze the data of their hardships."
     ]
     let images = [
         "images/AquaMarine.png",
