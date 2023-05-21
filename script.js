@@ -49,7 +49,7 @@ function botInfoChanger(inp) {
         "Dracobot is a bot meant to be a virtual cat that you can take care of, and in return " +
         "he will keep you company. You can pet him to grow his affection towards you, but make " +
         "sure you're feeding him everyday or else he'll start losing affection for you. ",
-        "Addiction bot is the newest bot application I've made and I made to help people struggling " +
+        "LeoGuides is the newest bot application I've made and I made to help people struggling " +
         "with addiction. It lets users track their struggles and gives them all kinds of resources to " +
         "help them get through it. It is still being worked on but offers a safe and secure place " +
         "for these users to journal and analyze the data of their hardships."
@@ -57,7 +57,7 @@ function botInfoChanger(inp) {
     let images = [
         "images/AquaMarine.png",
         "images/draco.png",
-        "images/PLACEHOLDER.jpg"
+        "images/LeoGuides.jpg"
     ]
     Array.from(inp.children).forEach(element => {
         element.addEventListener("click", function (e) {
@@ -84,3 +84,37 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var languages = [
+        { name: 'Python', startDate: new Date(2020, 8, 12) },
+        { name: 'PostgreSQL', startDate: new Date(2020, 8, 12) },
+        { name: 'Java', startDate: new Date(2021, 8, 17) },
+        { name: 'HTML', startDate: new Date(2022, 11, 5) },
+        { name: 'CSS', startDate: new Date(2022, 11, 20) },
+        { name: 'JavaScript', startDate: new Date(2022, 12, 13) }
+    ];
+    
+    function getTimeDifference(startDate) {
+        var currentDate = new Date();
+        var timeDiff = currentDate.getTime() - startDate.getTime();
+        var days = Math.floor(timeDiff / (1000 * 3600 * 24));
+        var years = Math.floor(days / 365);
+        return { days: days, years: years };
+    }
+    
+    function createLanguageTimeElement(language) {
+        var time = getTimeDifference(language.startDate);
+        var languageTimeElement = document.createElement('p');
+        languageTimeElement.textContent = language.name + " - " + time.years + " years, " + time.days%365 + " days";
+        return languageTimeElement;
+    }   
+    
+    var languagesContainer = document.getElementById('languages-container');
+    for (var i = 0; i < languages.length; i++) {
+        var language = languages[i];
+        var languageTimeElement = createLanguageTimeElement(language);
+        languagesContainer.appendChild(languageTimeElement);
+    }
+});

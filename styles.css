@@ -129,6 +129,7 @@ body {
     flex-direction: column;
 }
 
+
 .left-body p {
     margin: 12px;
     border-style: solid;
@@ -143,9 +144,14 @@ body {
     display: flex;
 }
 
+.right-body h1 {
+    font-size:x-large;
+    text-align: center;
+}
 
-
-.right-body p {
+.right-body p,
+.right-body h1, 
+.right-body h2 {
     margin: 8px;
 }
 
@@ -161,6 +167,7 @@ body {
     padding: 0;
     margin-bottom: 0;
     flex-grow: 1;
+    max-height: 34px;
 }
 
 .shown {
@@ -192,6 +199,9 @@ body {
     padding: 8px;
 }
 
+.right-body {
+    width: 100%;
+}
 
 .project {
     width: 100%;
