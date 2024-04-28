@@ -39,13 +39,11 @@ function darkMode(inp) {
 
 function botInfoChanger(inp) {
     let text = [
-        "AquaMarine is a virtual fishing and aquarium Discord bot I created " +
-        "in May 2021 to help me learn Python. Since its public debut in August " +
-        "2021, it has gained increasing popularity with over 350 servers, 900 users, " +
-        "and 100k commands ran. The bot has over 150 unique pixel fish to catch at 7 " +
-        "locations and over 50 achievements and upgrades each. An enjoyable bot for " +
-        "anyone interested in fishing or owning cute fish, you can catch fish, put them " +
-        "in aquariums, feed and take care of them, clean the ocean up, gamble, and much more.",
+        "AquaMarine is a virtual fishing and aquarium application I created in May 2021 to help " +
+        "me learn Python. Since its public debut in August 2021, it has gained increasing popularity " +
+        "with over 350 downloads, 900 users, and 100k commands ran. Then in June 2023 I started reworking " +
+        "the bot, fully updating the code and remaking it. Now it is fully functional with over a hundred " +
+        "different fish and something for everyone.",
         "Dracobot is a bot meant to be a virtual cat that you can take care of, and in return " +
         "he will keep you company. You can pet him to grow his affection towards you, but make " +
         "sure you're feeding him everyday or else he'll start losing affection for you. ",
@@ -93,7 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: 'Java', startDate: new Date(2021, 8, 17) },
         { name: 'HTML', startDate: new Date(2022, 11, 5) },
         { name: 'CSS', startDate: new Date(2022, 11, 20) },
-        { name: 'JavaScript', startDate: new Date(2022, 12, 13) }
+        { name: 'JavaScript', startDate: new Date(2022, 12, 13) },
+        { name: 'C', startDate: new Date(2024, 1, 24)},
+        { name: 'Assembly x86-64', startDate: new Date(2024, 3, 4)}
     ];
     
     function getTimeDifference(startDate) {
